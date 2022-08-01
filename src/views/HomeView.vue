@@ -169,7 +169,7 @@ onMounted(() => {
   position: fixed;
   top: 0;
   left: 0;
-  background: url("./acnh4.jpg");
+  background: url("/acnh4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -312,7 +312,7 @@ h1.logo {
   }
 }
 .bg-y {
-  background: url("./old_map.png");
+  background: url("/old_map.png");
 }
 
 @media (min-width: 1024px) {
