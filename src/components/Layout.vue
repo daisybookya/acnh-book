@@ -1,14 +1,18 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import { useRoute } from "vue-router";
 import { menuLink } from "../router";
 import { randomBk, backTop } from "../utility/common";
 const navEnable = ref(true);
 const move = ref("0");
 const title = String("動物森友會").split("");
+
 const checkActive = (path) => {
-  return window.location.pathname === path;
+  const route = useRoute();
+  return route.path === path;
 };
 const theBk = randomBk();
+
 onMounted(() => {
   backTop();
 });
@@ -29,7 +33,7 @@ onMounted(() => {
         >
           <va-sidebar-item-content>
             <va-sidebar-item-title>
-              <RouterLink :to="item.path">{{
+              <RouterLink :to="item.path" v-slot="{ isActive }">{{
                 item.label.split(" ")[0]
               }}</RouterLink>
             </va-sidebar-item-title>
@@ -76,7 +80,7 @@ onMounted(() => {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("src/assets/acnh.jpg");
+    background-image: url("/acnh.jpg");
   }
 }
 @keyframes scalebk {
