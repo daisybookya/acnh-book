@@ -1,14 +1,20 @@
-# vue-project
+# Performance Note
 
-This template should help get you started developing with Vue 3 in Vite.
+網站提供遊戲 動物森友會 的資源圖鑑，有島民、家具、化石、魚、海洋生物、昆蟲、藝術品可供查詢等等。
 
-## Recommended IDE Setup
+[webLink](https://daisybookya.github.io/acnh-book/)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### 基本功能
 
-## Customize configuration
+* 網站提供島民介紹、家具、化石、魚、海洋生物、昆蟲、藝術品可供檢索
+* 不同項目有提供不同類別可以查詢
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+### 工具使用
+
+Vue3  + vue-router + vite + ACNH API + (ui框架) vuestic + axios + scss
+
+
 
 ## Project Setup
 

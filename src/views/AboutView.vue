@@ -67,7 +67,7 @@ import LayoutVue from "../components/Layout.vue";
             <va-card-title>工具搭建</va-card-title>
             <va-card-content
               >本站使用：vue3 + (路由) vue-router + (前端建構工具) vite +
-              (ui框架) vuestic + axios</va-card-content
+              (ui框架) vuestic + axios + scss</va-card-content
             >
           </va-card>
         </div>

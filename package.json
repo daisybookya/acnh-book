@@ -1,6 +1,7 @@
 {
-  "name": "vue-project",
-  "version": "0.0.0",
+  "name": "acnh-book",
+  "version": "1.0.0",
+  "homepage": "https://daisybookya.github.io/acnh-book/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -149,7 +149,7 @@ onMounted(() => {
                 <p><b>工具搭建</b></p>
                 <p>
                   本站使用：vue3 + (路由) vue-router + (前端建構工具) vite +
-                  (ui框架) vuestic + axios
+                  (ui框架) vuestic + axios + scss
                 </p>
               </va-card-content>
             </va-card>
