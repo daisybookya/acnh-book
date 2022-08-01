@@ -4,7 +4,7 @@
   "homepage": "https://daisybookya.github.io/acnh-book/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/<REPO>/",
+    "build": "vite build --base=/acnh-book/",
     "preview": "vite preview --port 4173",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },

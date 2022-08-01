@@ -169,7 +169,7 @@ onMounted(() => {
   position: fixed;
   top: 0;
   left: 0;
-  background: url("src/assets/acnh4.jpg");
+  background: url("./acnh4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -233,7 +233,7 @@ onMounted(() => {
       transition: all 0.4s ease-in-out;
       @for $i from 1 through 7 {
         &:nth-child(#{$i}) {
-          transition-delay: $i * 0.1s;
+          //transition-delay: $i * 0.1s;
           transform: translateX($i * 50px);
         }
       }
@@ -312,7 +312,7 @@ h1.logo {
   }
 }
 .bg-y {
-  background: url("src/assets/old_map.png");
+  background: url("./old_map.png");
 }
 
 @media (min-width: 1024px) {

@@ -1,5 +1,5 @@
 export const randomBk = ()=>{
-    const path = './src/assets'
+    const path = '.'
     const bk = {
         0:`${path}/leaves.webp`,
         1:`${path}/leaves2.webp`,
