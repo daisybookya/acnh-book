@@ -1,0 +1,80 @@
+@import "./base.css";
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+#app {
+  margin: 0 auto;
+  /* padding: 2rem; */
+  font-weight: normal;
+  overflow: hidden;
+}
+.space {
+  margin-bottom: 30px;
+}
+.sp-font{
+  font-family: 'Lobster', cursive;
+}
+.para-title {
+  padding: 20px 0;
+  text-align: center;
+  background: rgb(255, 255, 255, 0.5);
+}
+.normal.active{
+  background: #fff;
+}
+.logo span{
+    padding: 8px 12px;
+    margin: 0 5px;
+    font-size: 28px;
+    color: #fff;
+    border-radius: 10px;
+}
+.logo.sm span{
+  font-size: 18px;
+  padding: 5px 7px;
+}
+.logo span:nth-child(1){
+  background: rgb(12, 150, 109);
+}
+.logo span:nth-child(2){
+  background: rgb(216, 91, 37);
+}
+.logo span:nth-child(3){
+  background: rgb(4, 155, 225);
+}
+.logo span:nth-child(4){
+  background: rgb(216, 37, 106);
+}
+.logo span:nth-child(5){
+  background: rgb(10, 153, 134);
+}
+a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: 0.4s;
+}
+.filter-list {
+  margin-bottom: 30px;
+}
+.va-pagination {
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.va-pagination__input.va-button {
+  background: none;
+}
+@media (hover: hover) {
+  /* a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  } */
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+
+  }
+}
