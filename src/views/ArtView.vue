@@ -86,9 +86,10 @@ const changeType = (value, type) => {
       請通知網站管理員
     </va-alert>
     <div v-else class="card-list flex layout gutter--xl">
-      <div class="flex search-list">
+      <div class="search-list">
         <va-button-toggle
           outline
+          size="small"
           v-model="filter.value"
           :options="options"
           class="mb-4"
@@ -96,6 +97,7 @@ const changeType = (value, type) => {
         />
         <va-button-toggle
           outline
+          size="small"
           v-model="filter.type"
           :options="typeOpts"
           class="mb-4"
@@ -104,7 +106,7 @@ const changeType = (value, type) => {
       </div>
       <div class="row">
         <div
-          class="flex sm6 md4 lg3"
+          class="flex xs12 sm6 md4 lg3"
           :key="index"
           v-for="(item, index) in changeContent(filter.result)"
         >
@@ -148,13 +150,6 @@ const changeType = (value, type) => {
 </template>
 
 <style lang="scss">
-.search-list {
-  display: flex;
-  margin-bottom: 30px;
-}
-.card-list {
-  margin-top: 30px;
-}
 .card-title {
   font-size: 1.1rem;
 }
@@ -173,6 +168,26 @@ const changeType = (value, type) => {
   margin: 30px 0;
   .va-pagination {
     margin: 0 auto;
+  }
+}
+@media (min-width: 150px) {
+  .card-list {
+    margin-top: 0px;
+  }
+  .search-list {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .search-list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 992px) {
+  .card-list {
+    margin-top: 30px;
   }
 }
 </style>

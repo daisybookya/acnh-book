@@ -107,20 +107,17 @@ function turnLocation(value) {
     <div v-else class="flex">
       <div class="filter-list layout gutter--md">
         <div class="row">
-          <div class="flex xs5 md6">
+          <div class="flex xs12 sm7">
             <div class="item">
-              搜尋：
               <va-input
-                class="flex mb-2"
-                placeholder="中文名稱關鍵字搜尋..."
+                placeholder="名稱關鍵字搜尋..."
                 v-model="filter.keyword"
               />
             </div>
           </div>
-          <div class="flex xs5 md6">
+          <div class="flex xs12 sm5">
             <div class="item">
               <va-select
-                class="mb-4"
                 label="稀有度"
                 @update:model-value="changeType"
                 v-model="filter.rarity"

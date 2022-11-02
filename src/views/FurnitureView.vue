@@ -91,24 +91,23 @@ const checkColor = (item) => {
     <div v-else class="card-list flex layout gutter--sm gutter--md gutter--lg">
       <div class="flex search-list">
         <div class="row">
-          <div class="flex xs12 md6 lg6">
-            搜尋：
-            <va-input
-              class="flex mb-2"
-              placeholder="中文名稱關鍵字搜尋..."
-              v-model="filter.keyword"
-            />
-          </div>
-          <div class="flex xs12 md6 lg6">
+          <div class="flex xs12 sm12">
             <va-button-toggle
               outline
+              size="small"
               v-model="filter.diy"
               :options="options"
               class="mb-4"
               @update:model-value="changeType"
             />
           </div>
-          <div class="flex xs12 md4 lg6">
+          <div class="flex xs12 sm6 lg6">
+            <va-input
+              placeholder="名稱關鍵字搜尋..."
+              v-model="filter.keyword"
+            />
+          </div>
+          <div class="flex xs12 sm6 lg6">
             標籤：
             <span>{{ filter.tag === "" ? "--" : filter.tag }}</span>
             <va-button

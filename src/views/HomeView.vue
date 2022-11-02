@@ -315,6 +315,17 @@ h1.logo {
   background: url("/old_map.png");
 }
 
-@media (min-width: 1024px) {
+@media screen and (max-device-width: 996px) {
+  .bg-y {
+    height: 135vh;
+  }
+  .book {
+    .item-box {
+      a {
+        line-height: 36px;
+        padding: 5px 0;
+      }
+    }
+  }
 }
 </style>

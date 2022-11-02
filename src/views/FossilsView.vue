@@ -78,6 +78,7 @@ const changeType = (value) => {
       <div class="flex search-list">
         <va-button-toggle
           outline
+          size="small"
           v-model="filter.value"
           :options="options"
           class="mb-4"
@@ -86,7 +87,7 @@ const changeType = (value) => {
       </div>
       <div class="row">
         <div
-          class="flex sm6 md4 lg3"
+          class="flex xs12 sm6 md4 lg3"
           :key="index"
           v-for="(item, index) in changeContent(filter.result)"
         >
@@ -149,5 +150,11 @@ const changeType = (value) => {
 }
 .page {
   margin: 30px 0;
+}
+@media (min-width: 768px) {
+  .search-list {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 </style>

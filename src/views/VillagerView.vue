@@ -88,22 +88,20 @@ const onChange = (index) => {
     </va-alert>
     <div v-else class="card-list flex layout gutter--xl">
       <div class="search-list layout gutter--md">
-        <div class="row">
-          <div class="flex xs5">
+        <div class="row align-content-center">
+          <div class="flex xs12 sm7">
             <div class="item">
               搜尋：
               <va-input
-                class="flex mb-2 md3"
                 placeholder="名稱關鍵字搜尋..."
                 v-model="filter.keyword"
                 @change="searchName"
               />
             </div>
           </div>
-          <div class="flex xs5">
+          <div class="flex xs12 sm5">
             <div class="item">
               <va-select
-                class="mb-4"
                 label="種族"
                 @update:model-value="selectType"
                 v-model="filter.value"
@@ -115,7 +113,7 @@ const onChange = (index) => {
       </div>
       <div class="row">
         <div
-          class="flex sm6 md4 lg3"
+          class="flex xs12 sm6 md4 lg3"
           :key="index"
           v-for="(item, index) in changeContent(filter.result)"
         >

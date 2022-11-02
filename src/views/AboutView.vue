@@ -8,7 +8,7 @@ import LayoutVue from "../components/Layout.vue";
     </template>
     <div class="card-list flex">
       <div class="row">
-        <div class="flex md12">
+        <div class="flex xs12 md12">
           <div class="item">
             <va-card stripe stripe-color="#5cd48d" class="infor-card">
               <va-card-title>關於動物森友會</va-card-title>
@@ -48,7 +48,7 @@ import LayoutVue from "../components/Layout.vue";
             </va-card>
           </div>
         </div>
-        <div class="flex md6">
+        <div class="flex xs12 md6">
           <va-card stripe stripe-color="#fba185" class="infor-card">
             <va-card-title>資料來源</va-card-title>
             <va-card-content
@@ -62,7 +62,7 @@ import LayoutVue from "../components/Layout.vue";
             </va-card-content>
           </va-card>
         </div>
-        <div class="flex md6">
+        <div class="flex xs12 md6">
           <va-card stripe stripe-color="#85cbfb" class="infor-card">
             <va-card-title>工具搭建</va-card-title>
             <va-card-content

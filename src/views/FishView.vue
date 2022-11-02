@@ -4,6 +4,7 @@ import { rarity, fishLocation } from "../utility/translation";
 import { backTop, turnMonth } from "../utility/common";
 import { fetchData, fetchTemp } from "../api/index";
 import { reactive, onMounted, computed } from "vue";
+
 const state = reactive({
   isError: false,
   errorMsg: "",
@@ -107,26 +108,19 @@ function turnLocation(value) {
     <div v-else class="flex">
       <div class="filter-list layout gutter--md">
         <div class="row">
-          <div class="flex xs5 md6">
-            <div class="item">
-              搜尋：
-              <va-input
-                class="flex mb-2 md3"
-                placeholder="中文名稱關鍵字搜尋..."
-                v-model="filter.keyword"
-              />
-            </div>
+          <div class="flex xs11 sm6">
+            <va-input
+              placeholder="名稱關鍵字搜尋..."
+              v-model="filter.keyword"
+            />
           </div>
-          <div class="flex xs5 md6">
-            <div class="item">
-              <va-select
-                class="mb-4"
-                label="稀有度"
-                @update:model-value="changeType"
-                v-model="filter.rarity"
-                :options="filter.options"
-              />
-            </div>
+          <div class="flex xs12 sm5">
+            <va-select
+              label="稀有度"
+              @update:model-value="changeType"
+              v-model="filter.rarity"
+              :options="filter.options"
+            />
           </div>
         </div>
       </div>
